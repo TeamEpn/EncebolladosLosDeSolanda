@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A736B1F3-D77C-49D9-8F00-601232435FA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Interfaz</RootNamespace>
+    <AssemblyName>Interfaz</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Balance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balance.Designer.cs">
+      <DependentUpon>Balance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientesMasFrecuentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientesMasFrecuentes.Designer.cs">
+      <DependentUpon>ClientesMasFrecuentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarPedido.Designer.cs">
+      <DependentUpon>ConsultarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvalidarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvalidarPedido.Designer.cs">
+      <DependentUpon>InvalidarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarPedido.Designer.cs">
+      <DependentUpon>ModificarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarTicketsEmitidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarTicketsEmitidos.Designer.cs">
+      <DependentUpon>MostrarTicketsEmitidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoPedido.Designer.cs">
+      <DependentUpon>NuevoPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarPlato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarPlato.Designer.cs">
+      <DependentUpon>ConsultarPlato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DarAltaBajaPlato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DarAltaBajaPlato.Designer.cs">
+      <DependentUpon>DarAltaBajaPlato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarPlato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarPlato.Designer.cs">
+      <DependentUpon>ActualizarPlato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarPlato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarPlato.Designer.cs">
+      <DependentUpon>IngresarPlato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarCliente.Designer.cs">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarCliente.Designer.cs">
+      <DependentUpon>ActualizarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DarAltaBajaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DarAltaBajaCliente.Designer.cs">
+      <DependentUpon>DarAltaBajaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarCliente.Designer.cs">
+      <DependentUpon>IngresarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlatosMasVendidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlatosMasVendidos.Designer.cs">
+      <DependentUpon>PlatosMasVendidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrediccionPlato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrediccionPlato.Designer.cs">
+      <DependentUpon>PrediccionPlato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrediccionPlatoFavorito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrediccionPlatoFavorito.Designer.cs">
+      <DependentUpon>PrediccionPlatoFavorito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ActualizarCliente.resx">
+      <DependentUpon>ActualizarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarPlato.resx">
+      <DependentUpon>ActualizarPlato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balance.resx">
+      <DependentUpon>Balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientesMasFrecuentes.resx">
+      <DependentUpon>ClientesMasFrecuentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarCliente.resx">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarPedido.resx">
+      <DependentUpon>ConsultarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarPlato.resx">
+      <DependentUpon>ConsultarPlato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DarAltaBajaCliente.resx">
+      <DependentUpon>DarAltaBajaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvalidarPedido.resx">
+      <DependentUpon>InvalidarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DarAltaBajaPlato.resx">
+      <DependentUpon>DarAltaBajaPlato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarCliente.resx">
+      <DependentUpon>IngresarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarPlato.resx">
+      <DependentUpon>IngresarPlato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarPedido.resx">
+      <DependentUpon>ModificarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarTicketsEmitidos.resx">
+      <DependentUpon>MostrarTicketsEmitidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoPedido.resx">
+      <DependentUpon>NuevoPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatosMasVendidos.resx">
+      <DependentUpon>PlatosMasVendidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrediccionPlato.resx">
+      <DependentUpon>PrediccionPlato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrediccionPlatoFavorito.resx">
+      <DependentUpon>PrediccionPlatoFavorito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
