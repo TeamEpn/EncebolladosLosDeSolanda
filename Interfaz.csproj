@@ -46,94 +46,94 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Balance.cs">
+    <Compile Include="móduloEstadística\Balance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Balance.Designer.cs">
+    <Compile Include="móduloEstadística\Balance.Designer.cs">
       <DependentUpon>Balance.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientesMasFrecuentes.cs">
+    <Compile Include="móduloEstadística\ClientesMasFrecuentes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientesMasFrecuentes.Designer.cs">
+    <Compile Include="móduloEstadística\ClientesMasFrecuentes.Designer.cs">
       <DependentUpon>ClientesMasFrecuentes.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConsultarPedido.cs">
+    <Compile Include="móduloTickets\ConsultarPedido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConsultarPedido.Designer.cs">
+    <Compile Include="móduloTickets\ConsultarPedido.Designer.cs">
       <DependentUpon>ConsultarPedido.cs</DependentUpon>
     </Compile>
-    <Compile Include="InvalidarPedido.cs">
+    <Compile Include="móduloTickets\InvalidarPedido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InvalidarPedido.Designer.cs">
+    <Compile Include="móduloTickets\InvalidarPedido.Designer.cs">
       <DependentUpon>InvalidarPedido.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModificarPedido.cs">
+    <Compile Include="móduloTickets\ModificarPedido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarPedido.Designer.cs">
+    <Compile Include="móduloTickets\ModificarPedido.Designer.cs">
       <DependentUpon>ModificarPedido.cs</DependentUpon>
     </Compile>
-    <Compile Include="MostrarTicketsEmitidos.cs">
+    <Compile Include="móduloEstadística\MostrarTicketsEmitidos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MostrarTicketsEmitidos.Designer.cs">
+    <Compile Include="móduloEstadística\MostrarTicketsEmitidos.Designer.cs">
       <DependentUpon>MostrarTicketsEmitidos.cs</DependentUpon>
     </Compile>
-    <Compile Include="NuevoPedido.cs">
+    <Compile Include="móduloTickets\NuevoPedido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NuevoPedido.Designer.cs">
+    <Compile Include="móduloTickets\NuevoPedido.Designer.cs">
       <DependentUpon>NuevoPedido.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConsultarPlato.cs">
+    <Compile Include="móduloPlatos\ConsultarPlato.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConsultarPlato.Designer.cs">
+    <Compile Include="móduloPlatos\ConsultarPlato.Designer.cs">
       <DependentUpon>ConsultarPlato.cs</DependentUpon>
     </Compile>
-    <Compile Include="DarAltaBajaPlato.cs">
+    <Compile Include="móduloPlatos\DarAltaBajaPlato.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DarAltaBajaPlato.Designer.cs">
+    <Compile Include="móduloPlatos\DarAltaBajaPlato.Designer.cs">
       <DependentUpon>DarAltaBajaPlato.cs</DependentUpon>
     </Compile>
-    <Compile Include="ActualizarPlato.cs">
+    <Compile Include="móduloPlatos\ActualizarPlato.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ActualizarPlato.Designer.cs">
+    <Compile Include="móduloPlatos\ActualizarPlato.Designer.cs">
       <DependentUpon>ActualizarPlato.cs</DependentUpon>
     </Compile>
-    <Compile Include="IngresarPlato.cs">
+    <Compile Include="móduloPlatos\IngresarPlato.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IngresarPlato.Designer.cs">
+    <Compile Include="móduloPlatos\IngresarPlato.Designer.cs">
       <DependentUpon>IngresarPlato.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConsultarCliente.cs">
+    <Compile Include="móduloClientes\ConsultarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConsultarCliente.Designer.cs">
+    <Compile Include="móduloClientes\ConsultarCliente.Designer.cs">
       <DependentUpon>ConsultarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="ActualizarCliente.cs">
+    <Compile Include="móduloClientes\ActualizarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ActualizarCliente.Designer.cs">
+    <Compile Include="móduloClientes\ActualizarCliente.Designer.cs">
       <DependentUpon>ActualizarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="DarAltaBajaCliente.cs">
+    <Compile Include="móduloClientes\DarAltaBajaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DarAltaBajaCliente.Designer.cs">
+    <Compile Include="móduloClientes\DarAltaBajaCliente.Designer.cs">
       <DependentUpon>DarAltaBajaCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="IngresarCliente.cs">
+    <Compile Include="móduloClientes\IngresarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IngresarCliente.Designer.cs">
+    <Compile Include="móduloClientes\IngresarCliente.Designer.cs">
       <DependentUpon>IngresarCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuPrincipal.cs">
@@ -142,22 +142,22 @@
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="PlatosMasVendidos.cs">
+    <Compile Include="móduloEstadística\PlatosMasVendidos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PlatosMasVendidos.Designer.cs">
+    <Compile Include="móduloEstadística\PlatosMasVendidos.Designer.cs">
       <DependentUpon>PlatosMasVendidos.cs</DependentUpon>
     </Compile>
-    <Compile Include="PrediccionPlato.cs">
+    <Compile Include="móduloEstadística\PrediccionPlato.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PrediccionPlato.Designer.cs">
+    <Compile Include="móduloEstadística\PrediccionPlato.Designer.cs">
       <DependentUpon>PrediccionPlato.cs</DependentUpon>
     </Compile>
-    <Compile Include="PrediccionPlatoFavorito.cs">
+    <Compile Include="móduloEstadística\PrediccionPlatoFavorito.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PrediccionPlatoFavorito.Designer.cs">
+    <Compile Include="móduloEstadística\PrediccionPlatoFavorito.Designer.cs">
       <DependentUpon>PrediccionPlatoFavorito.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal.cs">
@@ -168,61 +168,61 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ActualizarCliente.resx">
+    <EmbeddedResource Include="móduloClientes\ActualizarCliente.resx">
       <DependentUpon>ActualizarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ActualizarPlato.resx">
+    <EmbeddedResource Include="móduloPlatos\ActualizarPlato.resx">
       <DependentUpon>ActualizarPlato.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Balance.resx">
+    <EmbeddedResource Include="móduloEstadística\Balance.resx">
       <DependentUpon>Balance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientesMasFrecuentes.resx">
+    <EmbeddedResource Include="móduloEstadística\ClientesMasFrecuentes.resx">
       <DependentUpon>ClientesMasFrecuentes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConsultarCliente.resx">
+    <EmbeddedResource Include="móduloClientes\ConsultarCliente.resx">
       <DependentUpon>ConsultarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConsultarPedido.resx">
+    <EmbeddedResource Include="móduloTickets\ConsultarPedido.resx">
       <DependentUpon>ConsultarPedido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConsultarPlato.resx">
+    <EmbeddedResource Include="móduloPlatos\ConsultarPlato.resx">
       <DependentUpon>ConsultarPlato.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DarAltaBajaCliente.resx">
+    <EmbeddedResource Include="móduloClientes\DarAltaBajaCliente.resx">
       <DependentUpon>DarAltaBajaCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InvalidarPedido.resx">
+    <EmbeddedResource Include="móduloTickets\InvalidarPedido.resx">
       <DependentUpon>InvalidarPedido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DarAltaBajaPlato.resx">
+    <EmbeddedResource Include="móduloPlatos\DarAltaBajaPlato.resx">
       <DependentUpon>DarAltaBajaPlato.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IngresarCliente.resx">
+    <EmbeddedResource Include="móduloClientes\IngresarCliente.resx">
       <DependentUpon>IngresarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IngresarPlato.resx">
+    <EmbeddedResource Include="móduloPlatos\IngresarPlato.resx">
       <DependentUpon>IngresarPlato.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarPedido.resx">
+    <EmbeddedResource Include="móduloTickets\ModificarPedido.resx">
       <DependentUpon>ModificarPedido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MostrarTicketsEmitidos.resx">
+    <EmbeddedResource Include="móduloEstadística\MostrarTicketsEmitidos.resx">
       <DependentUpon>MostrarTicketsEmitidos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NuevoPedido.resx">
+    <EmbeddedResource Include="móduloTickets\NuevoPedido.resx">
       <DependentUpon>NuevoPedido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PlatosMasVendidos.resx">
+    <EmbeddedResource Include="móduloEstadística\PlatosMasVendidos.resx">
       <DependentUpon>PlatosMasVendidos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PrediccionPlato.resx">
+    <EmbeddedResource Include="móduloEstadística\PrediccionPlato.resx">
       <DependentUpon>PrediccionPlato.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PrediccionPlatoFavorito.resx">
+    <EmbeddedResource Include="móduloEstadística\PrediccionPlatoFavorito.resx">
       <DependentUpon>PrediccionPlatoFavorito.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
@@ -249,6 +249,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="móduloAdministración\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
