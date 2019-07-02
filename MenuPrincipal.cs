@@ -1,14 +1,15 @@
-﻿using System;
+﻿using Interfaz.móduloPlatos;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
 namespace Interfaz{
-    public partial class MenuPrincipal : Form{
+    public partial class MenuPrincipal : Form {
 
         Form formPadre;
 
 
-        public MenuPrincipal(Form padre){
+        public MenuPrincipal(Form padre) {
             InitializeComponent();
             this.BackColor = Color.Yellow;
             //Ocultar información antes de presionar algún boton boton grande
@@ -128,11 +129,15 @@ namespace Interfaz{
 
         private void ConsultarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ConsultarIngrediente consuling = new ConsultarIngrediente();
+            consuling.Show();
 
         }
 
         private void IngresarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            IngresarIngrediente ingresarIng = new IngresarIngrediente();
+            ingresarIng.Show();
 
         }
 
@@ -215,6 +220,24 @@ namespace Interfaz{
         {
             EliminarPlato eliminarPlato = new EliminarPlato();
             eliminarPlato.Show();
+        }
+
+        private void ActualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ActualizarIngrediente acutaliing = new ActualizarIngrediente();
+            acutaliing.Show();
+        }
+
+        private void DarDeAltaIngredienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DarDeAltaIngrediente daraltaing = new DarDeAltaIngrediente();
+            daraltaing.Show();
+        }
+
+        private void DarDeBajaToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            DarBajaIngrediente darbajaing = new DarBajaIngrediente();
+            darbajaing.Show();
         }
     }
 }

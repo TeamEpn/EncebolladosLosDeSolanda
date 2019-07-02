@@ -34,6 +34,7 @@
             this.actualizarCliente = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarCliente = new System.Windows.Forms.ToolStripMenuItem();
             this.darDeBajaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.darDeAltaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPlato = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarPlato = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarPlato = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,8 +44,8 @@
             this.ingresientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.darDeAltaIngredienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuEstadisticas = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDiario = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteSemanal = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,6 +57,7 @@
             this.nuevoPedido = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarPedido = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarPedido = new System.Windows.Forms.ToolStripMenuItem();
+            this.emitirFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAdminSistema = new System.Windows.Forms.ToolStripMenuItem();
             this.administraciónDeSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administraciónDeParámetrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,8 +70,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.labelDescripcion = new System.Windows.Forms.Label();
-            this.darDeAltaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.emitirFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.darDeBajaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,30 +104,37 @@
             // ingresarCliente
             // 
             this.ingresarCliente.Name = "ingresarCliente";
-            this.ingresarCliente.Size = new System.Drawing.Size(180, 22);
+            this.ingresarCliente.Size = new System.Drawing.Size(133, 22);
             this.ingresarCliente.Text = "Registrar";
             this.ingresarCliente.Click += new System.EventHandler(this.IngresarCliente_Click);
             // 
             // actualizarCliente
             // 
             this.actualizarCliente.Name = "actualizarCliente";
-            this.actualizarCliente.Size = new System.Drawing.Size(180, 22);
+            this.actualizarCliente.Size = new System.Drawing.Size(133, 22);
             this.actualizarCliente.Text = "Actualizar";
             this.actualizarCliente.Click += new System.EventHandler(this.ActualizarCliente_Click);
             // 
             // consultarCliente
             // 
             this.consultarCliente.Name = "consultarCliente";
-            this.consultarCliente.Size = new System.Drawing.Size(180, 22);
+            this.consultarCliente.Size = new System.Drawing.Size(133, 22);
             this.consultarCliente.Text = "Consultar";
             this.consultarCliente.Click += new System.EventHandler(this.ConsultarCliente_Click);
             // 
             // darDeBajaToolStripMenuItem1
             // 
             this.darDeBajaToolStripMenuItem1.Name = "darDeBajaToolStripMenuItem1";
-            this.darDeBajaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.darDeBajaToolStripMenuItem1.Size = new System.Drawing.Size(133, 22);
             this.darDeBajaToolStripMenuItem1.Text = "Dar de baja";
             this.darDeBajaToolStripMenuItem1.Click += new System.EventHandler(this.DarDeBajaToolStripMenuItem1_Click);
+            // 
+            // darDeAltaToolStripMenuItem1
+            // 
+            this.darDeAltaToolStripMenuItem1.Name = "darDeAltaToolStripMenuItem1";
+            this.darDeAltaToolStripMenuItem1.Size = new System.Drawing.Size(133, 22);
+            this.darDeAltaToolStripMenuItem1.Text = "Dar de alta";
+            this.darDeAltaToolStripMenuItem1.Click += new System.EventHandler(this.DarDeAltaToolStripMenuItem1_Click);
             // 
             // menuPlato
             // 
@@ -145,7 +153,7 @@
             // 
             this.ingresarPlato.Name = "ingresarPlato";
             this.ingresarPlato.Size = new System.Drawing.Size(180, 22);
-            this.ingresarPlato.Text = "Registrar";
+            this.ingresarPlato.Text = "Ingresar";
             this.ingresarPlato.Click += new System.EventHandler(this.IngresarPlato_Click);
             // 
             // actualizarPlato
@@ -181,8 +189,9 @@
             this.ingresientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ingresarToolStripMenuItem,
             this.actualizarToolStripMenuItem,
-            this.eliminarToolStripMenuItem,
-            this.consultarToolStripMenuItem});
+            this.consultarToolStripMenuItem,
+            this.darDeAltaIngredienteToolStripMenuItem,
+            this.darDeBajaToolStripMenuItem2});
             this.ingresientesToolStripMenuItem.Name = "ingresientesToolStripMenuItem";
             this.ingresientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ingresientesToolStripMenuItem.Text = "Ingredientes";
@@ -199,12 +208,7 @@
             this.actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
             this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.actualizarToolStripMenuItem.Text = "Actualizar";
-            // 
-            // eliminarToolStripMenuItem
-            // 
-            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.actualizarToolStripMenuItem.Click += new System.EventHandler(this.ActualizarToolStripMenuItem_Click);
             // 
             // consultarToolStripMenuItem
             // 
@@ -212,6 +216,13 @@
             this.consultarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.consultarToolStripMenuItem.Text = "Consultar";
             this.consultarToolStripMenuItem.Click += new System.EventHandler(this.ConsultarToolStripMenuItem_Click);
+            // 
+            // darDeAltaIngredienteToolStripMenuItem
+            // 
+            this.darDeAltaIngredienteToolStripMenuItem.Name = "darDeAltaIngredienteToolStripMenuItem";
+            this.darDeAltaIngredienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.darDeAltaIngredienteToolStripMenuItem.Text = "Dar de alta";
+            this.darDeAltaIngredienteToolStripMenuItem.Click += new System.EventHandler(this.DarDeAltaIngredienteToolStripMenuItem_Click);
             // 
             // menuEstadisticas
             // 
@@ -299,6 +310,13 @@
             this.consultarPedido.Size = new System.Drawing.Size(206, 22);
             this.consultarPedido.Text = "Mostrar Ticket de Pedido";
             this.consultarPedido.Click += new System.EventHandler(this.ConsultarPedido_Click);
+            // 
+            // emitirFacturaToolStripMenuItem
+            // 
+            this.emitirFacturaToolStripMenuItem.Name = "emitirFacturaToolStripMenuItem";
+            this.emitirFacturaToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.emitirFacturaToolStripMenuItem.Text = "Emitir Factura";
+            this.emitirFacturaToolStripMenuItem.Click += new System.EventHandler(this.EmitirFacturaToolStripMenuItem_Click);
             // 
             // menuAdminSistema
             // 
@@ -416,19 +434,12 @@
             this.labelDescripcion.TabIndex = 11;
             this.labelDescripcion.Text = "Aqui información de lo que hace cada modulo al presionar un boton";
             // 
-            // darDeAltaToolStripMenuItem1
+            // darDeBajaToolStripMenuItem2
             // 
-            this.darDeAltaToolStripMenuItem1.Name = "darDeAltaToolStripMenuItem1";
-            this.darDeAltaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.darDeAltaToolStripMenuItem1.Text = "Dar de alta";
-            this.darDeAltaToolStripMenuItem1.Click += new System.EventHandler(this.DarDeAltaToolStripMenuItem1_Click);
-            // 
-            // emitirFacturaToolStripMenuItem
-            // 
-            this.emitirFacturaToolStripMenuItem.Name = "emitirFacturaToolStripMenuItem";
-            this.emitirFacturaToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.emitirFacturaToolStripMenuItem.Text = "Emitir Factura";
-            this.emitirFacturaToolStripMenuItem.Click += new System.EventHandler(this.EmitirFacturaToolStripMenuItem_Click);
+            this.darDeBajaToolStripMenuItem2.Name = "darDeBajaToolStripMenuItem2";
+            this.darDeBajaToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.darDeBajaToolStripMenuItem2.Text = "Dar de baja";
+            this.darDeBajaToolStripMenuItem2.Click += new System.EventHandler(this.DarDeBajaToolStripMenuItem2_Click);
             // 
             // MenuPrincipal
             // 
@@ -481,7 +492,7 @@
         private System.Windows.Forms.ToolStripMenuItem ingresientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem darDeAltaIngredienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem darDeBajaToolStripMenuItem1;
         private System.Windows.Forms.Button buttonClientes;
@@ -498,5 +509,6 @@
         private System.Windows.Forms.Label labelDescripcion;
         private System.Windows.Forms.ToolStripMenuItem darDeAltaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem emitirFacturaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem darDeBajaToolStripMenuItem2;
     }
 }

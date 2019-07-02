@@ -15,6 +15,7 @@ namespace Interfaz
         public DarDeAlta()
         {
             InitializeComponent();
+            this.BackColor = Color.SkyBlue;
         }
 
         private void BotonEliminarEliCli_Click(object sender, EventArgs e)
