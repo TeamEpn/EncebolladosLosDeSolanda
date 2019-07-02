@@ -239,5 +239,11 @@ namespace Interfaz{
             DarBajaIngrediente darbajaing = new DarBajaIngrediente();
             darbajaing.Show();
         }
+
+        private void ResetearToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form resetear = new Resetear();
+            resetear.Show();
+        }
     }
 }
