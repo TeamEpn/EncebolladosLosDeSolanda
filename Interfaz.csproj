@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="móduloTickets\EmisionFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="móduloTickets\EmisionFactura.Designer.cs">
+      <DependentUpon>EmisionFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="móduloClientes\DarDeAltaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="móduloClientes\DarDeAltaCliente.Designer.cs">
+      <DependentUpon>DarDeAltaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="móduloPlatos\DarDeAltaPlato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="móduloPlatos\DarDeAltaPlato.Designer.cs">
+      <DependentUpon>DarDeAltaPlato.cs</DependentUpon>
+    </Compile>
     <Compile Include="móduloEstadística\Balance.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,11 +76,11 @@
     <Compile Include="móduloEstadística\ClientesMasFrecuentes.Designer.cs">
       <DependentUpon>ClientesMasFrecuentes.cs</DependentUpon>
     </Compile>
-    <Compile Include="móduloTickets\ConsultarPedido.cs">
+    <Compile Include="móduloTickets\MostrarTicket.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="móduloTickets\ConsultarPedido.Designer.cs">
-      <DependentUpon>ConsultarPedido.cs</DependentUpon>
+    <Compile Include="móduloTickets\MostrarTicket.Designer.cs">
+      <DependentUpon>MostrarTicket.cs</DependentUpon>
     </Compile>
     <Compile Include="móduloTickets\InvalidarPedido.cs">
       <SubType>Form</SubType>
@@ -70,23 +88,17 @@
     <Compile Include="móduloTickets\InvalidarPedido.Designer.cs">
       <DependentUpon>InvalidarPedido.cs</DependentUpon>
     </Compile>
-    <Compile Include="móduloTickets\ModificarPedido.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="móduloTickets\ModificarPedido.Designer.cs">
-      <DependentUpon>ModificarPedido.cs</DependentUpon>
-    </Compile>
     <Compile Include="móduloEstadística\MostrarTicketsEmitidos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="móduloEstadística\MostrarTicketsEmitidos.Designer.cs">
       <DependentUpon>MostrarTicketsEmitidos.cs</DependentUpon>
     </Compile>
-    <Compile Include="móduloTickets\NuevoPedido.cs">
+    <Compile Include="móduloTickets\CrearPedido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="móduloTickets\NuevoPedido.Designer.cs">
-      <DependentUpon>NuevoPedido.cs</DependentUpon>
+    <Compile Include="móduloTickets\CrearPedido.Designer.cs">
+      <DependentUpon>CrearPedido.cs</DependentUpon>
     </Compile>
     <Compile Include="móduloPlatos\ConsultarPlato.cs">
       <SubType>Form</SubType>
@@ -94,11 +106,11 @@
     <Compile Include="móduloPlatos\ConsultarPlato.Designer.cs">
       <DependentUpon>ConsultarPlato.cs</DependentUpon>
     </Compile>
-    <Compile Include="móduloPlatos\DarAltaBajaPlato.cs">
+    <Compile Include="móduloPlatos\DarBajaPlato.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="móduloPlatos\DarAltaBajaPlato.Designer.cs">
-      <DependentUpon>DarAltaBajaPlato.cs</DependentUpon>
+    <Compile Include="móduloPlatos\DarBajaPlato.Designer.cs">
+      <DependentUpon>DarBajaPlato.cs</DependentUpon>
     </Compile>
     <Compile Include="móduloPlatos\ActualizarPlato.cs">
       <SubType>Form</SubType>
@@ -124,17 +136,17 @@
     <Compile Include="móduloClientes\ActualizarCliente.Designer.cs">
       <DependentUpon>ActualizarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="móduloClientes\DarAltaBajaCliente.cs">
+    <Compile Include="móduloClientes\DarBajaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="móduloClientes\DarAltaBajaCliente.Designer.cs">
-      <DependentUpon>DarAltaBajaCliente.cs</DependentUpon>
+    <Compile Include="móduloClientes\DarBajaCliente.Designer.cs">
+      <DependentUpon>DarBajaCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="móduloClientes\IngresarCliente.cs">
+    <Compile Include="móduloClientes\RegistrarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="móduloClientes\IngresarCliente.Designer.cs">
-      <DependentUpon>IngresarCliente.cs</DependentUpon>
+    <Compile Include="móduloClientes\RegistrarCliente.Designer.cs">
+      <DependentUpon>RegistrarCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -168,8 +180,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validacion.cs" />
+    <EmbeddedResource Include="móduloTickets\EmisionFactura.resx">
+      <DependentUpon>EmisionFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="móduloClientes\DarDeAltaCliente.resx">
+      <DependentUpon>DarDeAltaCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="móduloClientes\ActualizarCliente.resx">
       <DependentUpon>ActualizarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="móduloPlatos\DarDeAltaPlato.resx">
+      <DependentUpon>DarDeAltaPlato.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="móduloPlatos\ActualizarPlato.resx">
       <DependentUpon>ActualizarPlato.cs</DependentUpon>
@@ -183,35 +205,32 @@
     <EmbeddedResource Include="móduloClientes\ConsultarCliente.resx">
       <DependentUpon>ConsultarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="móduloTickets\ConsultarPedido.resx">
-      <DependentUpon>ConsultarPedido.cs</DependentUpon>
+    <EmbeddedResource Include="móduloTickets\MostrarTicket.resx">
+      <DependentUpon>MostrarTicket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="móduloPlatos\ConsultarPlato.resx">
       <DependentUpon>ConsultarPlato.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="móduloClientes\DarAltaBajaCliente.resx">
-      <DependentUpon>DarAltaBajaCliente.cs</DependentUpon>
+    <EmbeddedResource Include="móduloClientes\DarBajaCliente.resx">
+      <DependentUpon>DarBajaCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="móduloTickets\InvalidarPedido.resx">
       <DependentUpon>InvalidarPedido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="móduloPlatos\DarAltaBajaPlato.resx">
-      <DependentUpon>DarAltaBajaPlato.cs</DependentUpon>
+    <EmbeddedResource Include="móduloPlatos\DarBajaPlato.resx">
+      <DependentUpon>DarBajaPlato.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="móduloClientes\IngresarCliente.resx">
-      <DependentUpon>IngresarCliente.cs</DependentUpon>
+    <EmbeddedResource Include="móduloClientes\RegistrarCliente.resx">
+      <DependentUpon>RegistrarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="móduloPlatos\IngresarPlato.resx">
       <DependentUpon>IngresarPlato.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="móduloTickets\ModificarPedido.resx">
-      <DependentUpon>ModificarPedido.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="móduloEstadística\MostrarTicketsEmitidos.resx">
       <DependentUpon>MostrarTicketsEmitidos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="móduloTickets\NuevoPedido.resx">
-      <DependentUpon>NuevoPedido.cs</DependentUpon>
+    <EmbeddedResource Include="móduloTickets\CrearPedido.resx">
+      <DependentUpon>CrearPedido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>

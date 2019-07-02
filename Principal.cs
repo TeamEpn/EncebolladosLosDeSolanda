@@ -21,7 +21,11 @@ namespace Interfaz
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (textBoxUsuario.Text  == "USER" && textBoxContrasenia.Text == "12345") { //validar autenticacion con la base de datos y md5
+
+            new MenuPrincipal(this).Show();
+            this.Hide();
+
+            /*if (textBoxUsuario.Text  == "USER" && textBoxContrasenia.Text == "12345") { //validar autenticacion con la base de datos y md5
                 buttonIngresar.Enabled = false;
                 new MenuPrincipal(this).Show();
                 this.Hide();
@@ -30,7 +34,7 @@ namespace Interfaz
                 textBoxContrasenia.BackColor = Color.Pink;
                 textBoxContrasenia.Text = "";
                 labelError.Visible = true;
-            }
+            }*/
         }
 
         private void ButtonSalir_Click(object sender, EventArgs e)

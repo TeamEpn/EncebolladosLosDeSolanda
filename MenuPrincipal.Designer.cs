@@ -67,7 +67,9 @@
             this.buttonSalir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelDescripcion = new System.Windows.Forms.Label();
+            this.darDeAltaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.emitirFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,7 +93,8 @@
             this.ingresarCliente,
             this.actualizarCliente,
             this.consultarCliente,
-            this.darDeBajaToolStripMenuItem1});
+            this.darDeBajaToolStripMenuItem1,
+            this.darDeAltaToolStripMenuItem1});
             this.menuClientes.Name = "menuClientes";
             this.menuClientes.Size = new System.Drawing.Size(56, 20);
             this.menuClientes.Text = "Cliente";
@@ -100,29 +103,29 @@
             // ingresarCliente
             // 
             this.ingresarCliente.Name = "ingresarCliente";
-            this.ingresarCliente.Size = new System.Drawing.Size(161, 22);
-            this.ingresarCliente.Text = "Ingresar";
+            this.ingresarCliente.Size = new System.Drawing.Size(180, 22);
+            this.ingresarCliente.Text = "Registrar";
             this.ingresarCliente.Click += new System.EventHandler(this.IngresarCliente_Click);
             // 
             // actualizarCliente
             // 
             this.actualizarCliente.Name = "actualizarCliente";
-            this.actualizarCliente.Size = new System.Drawing.Size(161, 22);
+            this.actualizarCliente.Size = new System.Drawing.Size(180, 22);
             this.actualizarCliente.Text = "Actualizar";
             this.actualizarCliente.Click += new System.EventHandler(this.ActualizarCliente_Click);
             // 
             // consultarCliente
             // 
             this.consultarCliente.Name = "consultarCliente";
-            this.consultarCliente.Size = new System.Drawing.Size(161, 22);
+            this.consultarCliente.Size = new System.Drawing.Size(180, 22);
             this.consultarCliente.Text = "Consultar";
             this.consultarCliente.Click += new System.EventHandler(this.ConsultarCliente_Click);
             // 
             // darDeBajaToolStripMenuItem1
             // 
             this.darDeBajaToolStripMenuItem1.Name = "darDeBajaToolStripMenuItem1";
-            this.darDeBajaToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
-            this.darDeBajaToolStripMenuItem1.Text = "Dar de baja | alta";
+            this.darDeBajaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.darDeBajaToolStripMenuItem1.Text = "Dar de baja";
             this.darDeBajaToolStripMenuItem1.Click += new System.EventHandler(this.DarDeBajaToolStripMenuItem1_Click);
             // 
             // menuPlato
@@ -142,7 +145,7 @@
             // 
             this.ingresarPlato.Name = "ingresarPlato";
             this.ingresarPlato.Size = new System.Drawing.Size(180, 22);
-            this.ingresarPlato.Text = "Ingresar";
+            this.ingresarPlato.Text = "Registrar";
             this.ingresarPlato.Click += new System.EventHandler(this.IngresarPlato_Click);
             // 
             // actualizarPlato
@@ -164,12 +167,14 @@
             this.darDeAltaToolStripMenuItem.Name = "darDeAltaToolStripMenuItem";
             this.darDeAltaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.darDeAltaToolStripMenuItem.Text = "Dar de alta";
+            this.darDeAltaToolStripMenuItem.Click += new System.EventHandler(this.DarDeAltaToolStripMenuItem_Click);
             // 
             // darDeBajaToolStripMenuItem
             // 
             this.darDeBajaToolStripMenuItem.Name = "darDeBajaToolStripMenuItem";
             this.darDeBajaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.darDeBajaToolStripMenuItem.Text = "Dar de baja";
+            this.darDeBajaToolStripMenuItem.Click += new System.EventHandler(this.DarDeBajaToolStripMenuItem_Click);
             // 
             // ingresientesToolStripMenuItem
             // 
@@ -224,14 +229,14 @@
             // reporteDiario
             // 
             this.reporteDiario.Name = "reporteDiario";
-            this.reporteDiario.Size = new System.Drawing.Size(243, 22);
+            this.reporteDiario.Size = new System.Drawing.Size(231, 22);
             this.reporteDiario.Text = "Predecir plato más vendido";
             this.reporteDiario.Click += new System.EventHandler(this.ReporteDiario_Click);
             // 
             // reporteSemanal
             // 
             this.reporteSemanal.Name = "reporteSemanal";
-            this.reporteSemanal.Size = new System.Drawing.Size(237, 22);
+            this.reporteSemanal.Size = new System.Drawing.Size(231, 22);
             this.reporteSemanal.Text = "Mostrat tickets emitidos";
             this.reporteSemanal.Click += new System.EventHandler(this.ReporteSemanal_Click);
             // 
@@ -268,7 +273,8 @@
             this.menuTickets.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevoPedido,
             this.eliminarPedido,
-            this.consultarPedido});
+            this.consultarPedido,
+            this.emitirFacturaToolStripMenuItem});
             this.menuTickets.Name = "menuTickets";
             this.menuTickets.Size = new System.Drawing.Size(56, 20);
             this.menuTickets.Text = "Tickets";
@@ -276,22 +282,22 @@
             // nuevoPedido
             // 
             this.nuevoPedido.Name = "nuevoPedido";
-            this.nuevoPedido.Size = new System.Drawing.Size(165, 22);
+            this.nuevoPedido.Size = new System.Drawing.Size(206, 22);
             this.nuevoPedido.Text = "Nuevo Pedido";
             this.nuevoPedido.Click += new System.EventHandler(this.NuevoPedido_Click);
             // 
             // eliminarPedido
             // 
             this.eliminarPedido.Name = "eliminarPedido";
-            this.eliminarPedido.Size = new System.Drawing.Size(165, 22);
-            this.eliminarPedido.Text = "Anular Pedido";
+            this.eliminarPedido.Size = new System.Drawing.Size(206, 22);
+            this.eliminarPedido.Text = "Invalidar Ticket";
             this.eliminarPedido.Click += new System.EventHandler(this.EliminarPedido_Click);
             // 
             // consultarPedido
             // 
             this.consultarPedido.Name = "consultarPedido";
-            this.consultarPedido.Size = new System.Drawing.Size(165, 22);
-            this.consultarPedido.Text = "Consultar Pedido";
+            this.consultarPedido.Size = new System.Drawing.Size(206, 22);
+            this.consultarPedido.Text = "Mostrar Ticket de Pedido";
             this.consultarPedido.Click += new System.EventHandler(this.ConsultarPedido_Click);
             // 
             // menuAdminSistema
@@ -335,6 +341,7 @@
             this.buttonPlatos.TabIndex = 4;
             this.buttonPlatos.Text = "Plato";
             this.buttonPlatos.UseVisualStyleBackColor = true;
+            this.buttonPlatos.Click += new System.EventHandler(this.ButtonPlatos_Click);
             // 
             // buttonEstadistica
             // 
@@ -345,6 +352,7 @@
             this.buttonEstadistica.TabIndex = 5;
             this.buttonEstadistica.Text = "Estadística";
             this.buttonEstadistica.UseVisualStyleBackColor = true;
+            this.buttonEstadistica.Click += new System.EventHandler(this.ButtonEstadistica_Click);
             // 
             // buttonTieckets
             // 
@@ -355,6 +363,7 @@
             this.buttonTieckets.TabIndex = 6;
             this.buttonTieckets.Text = "Tickets";
             this.buttonTieckets.UseVisualStyleBackColor = true;
+            this.buttonTieckets.Click += new System.EventHandler(this.ButtonTieckets_Click);
             // 
             // buttonAdministración
             // 
@@ -365,6 +374,7 @@
             this.buttonAdministración.TabIndex = 7;
             this.buttonAdministración.Text = "Adminsitración";
             this.buttonAdministración.UseVisualStyleBackColor = true;
+            this.buttonAdministración.Click += new System.EventHandler(this.ButtonAdministración_Click);
             // 
             // buttonSalir
             // 
@@ -397,21 +407,35 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Los de Solanda";
             // 
-            // label3
+            // labelDescripcion
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 183);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(325, 13);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Aqui información de lo que hace cada modulo al presionar un boton";
+            this.labelDescripcion.AutoSize = true;
+            this.labelDescripcion.Location = new System.Drawing.Point(6, 183);
+            this.labelDescripcion.Name = "labelDescripcion";
+            this.labelDescripcion.Size = new System.Drawing.Size(325, 13);
+            this.labelDescripcion.TabIndex = 11;
+            this.labelDescripcion.Text = "Aqui información de lo que hace cada modulo al presionar un boton";
+            // 
+            // darDeAltaToolStripMenuItem1
+            // 
+            this.darDeAltaToolStripMenuItem1.Name = "darDeAltaToolStripMenuItem1";
+            this.darDeAltaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.darDeAltaToolStripMenuItem1.Text = "Dar de alta";
+            this.darDeAltaToolStripMenuItem1.Click += new System.EventHandler(this.DarDeAltaToolStripMenuItem1_Click);
+            // 
+            // emitirFacturaToolStripMenuItem
+            // 
+            this.emitirFacturaToolStripMenuItem.Name = "emitirFacturaToolStripMenuItem";
+            this.emitirFacturaToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.emitirFacturaToolStripMenuItem.Text = "Emitir Factura";
+            this.emitirFacturaToolStripMenuItem.Click += new System.EventHandler(this.EmitirFacturaToolStripMenuItem_Click);
             // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(343, 455);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelDescripcion);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonSalir);
@@ -471,6 +495,8 @@
         private System.Windows.Forms.ToolStripMenuItem mostrarClienteMásFrecuenteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mostratPlatosMásVendidosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem emitirBalanceDeCuentasToolStripMenuItem;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelDescripcion;
+        private System.Windows.Forms.ToolStripMenuItem darDeAltaToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem emitirFacturaToolStripMenuItem;
     }
 }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Interfaz
 {
-    public partial class PrediccionPlatoFavorito : Form
+    public partial class ConsultarPedido : Form
     {
-        public PrediccionPlatoFavorito()
+        public ConsultarPedido()
         {
             InitializeComponent();
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -27,16 +22,15 @@ namespace Interfaz
             this.Close();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void ButtonMostrarTicket_Click(object sender, EventArgs e)
         {
-
-            if(Validacion.existeCliente(this.textBoxCedulaCliente.Text))
+            if (Validacion.existeTicket(this.textBoxIdPedido.Text))
             {
-                MessageBox.Show("El plato favorito del cliente con cédula " + this.textBoxCedulaCliente.Text + "es:\n\n XXXXX");
+                MessageBox.Show("Pedido invalidado");
             }
             else
             {
-                MessageBox.Show("Cliente no registrado");
+                MessageBox.Show("El ticket no existe");
             }
         }
     }

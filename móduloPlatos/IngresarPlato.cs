@@ -39,9 +39,21 @@ namespace Interfaz
         {
             if (validarCampos()) {
                 camposError();
+                MessageBox.Show("Error al regresar plato");
             }else{
-                labelOk.Visible = true;
-                camposvacios();
+
+                if (!Validacion.estaPlatoRegistrado(this.textBoxNombre.Text))
+                {
+                    //se toman los ingredientes de la lista
+                    MessageBox.Show("Plato ingresado Correctamente");
+                    labelOk.Visible = true;
+                    camposvacios();
+                }
+                else
+                {
+                    MessageBox.Show("Plato ya existe");
+                }
+                
             }
         }
 

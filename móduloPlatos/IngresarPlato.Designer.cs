@@ -36,23 +36,25 @@
             this.textBoxPrecio = new System.Windows.Forms.TextBox();
             this.labelError = new System.Windows.Forms.Label();
             this.labelOk = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // buttonIngresar
             // 
             this.buttonIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.buttonIngresar.Location = new System.Drawing.Point(8, 142);
+            this.buttonIngresar.Location = new System.Drawing.Point(7, 338);
             this.buttonIngresar.Name = "buttonIngresar";
             this.buttonIngresar.Size = new System.Drawing.Size(149, 30);
             this.buttonIngresar.TabIndex = 0;
-            this.buttonIngresar.Text = "Ingresar";
+            this.buttonIngresar.Text = "Registrar";
             this.buttonIngresar.UseVisualStyleBackColor = true;
             this.buttonIngresar.Click += new System.EventHandler(this.ButtonIngresar_Click);
             // 
             // buttonCancelar
             // 
             this.buttonCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.buttonCancelar.Location = new System.Drawing.Point(163, 142);
+            this.buttonCancelar.Location = new System.Drawing.Point(162, 338);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(149, 30);
             this.buttonCancelar.TabIndex = 1;
@@ -101,7 +103,7 @@
             this.labelError.AutoSize = true;
             this.labelError.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.labelError.ForeColor = System.Drawing.Color.Red;
-            this.labelError.Location = new System.Drawing.Point(79, 119);
+            this.labelError.Location = new System.Drawing.Point(78, 315);
             this.labelError.Name = "labelError";
             this.labelError.Size = new System.Drawing.Size(160, 20);
             this.labelError.TabIndex = 6;
@@ -112,17 +114,36 @@
             this.labelOk.AutoSize = true;
             this.labelOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.labelOk.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelOk.Location = new System.Drawing.Point(53, 99);
+            this.labelOk.Location = new System.Drawing.Point(52, 295);
             this.labelOk.Name = "labelOk";
             this.labelOk.Size = new System.Drawing.Size(218, 20);
             this.labelOk.TabIndex = 7;
             this.labelOk.Text = "Plato ingresado exitosamente";
             // 
-            // formIngresarPlato
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(113, 96);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(89, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Lista ingredientes";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(71, 132);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(182, 136);
+            this.richTextBox1.TabIndex = 9;
+            this.richTextBox1.Text = "";
+            // 
+            // IngresarPlato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(321, 174);
+            this.ClientSize = new System.Drawing.Size(321, 395);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.labelOk);
             this.Controls.Add(this.labelError);
             this.Controls.Add(this.textBoxPrecio);
@@ -131,7 +152,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonIngresar);
-            this.Name = "formIngresarPlato";
+            this.Name = "IngresarPlato";
             this.Text = "Ingresar Plato";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -148,5 +169,7 @@
         private System.Windows.Forms.TextBox textBoxPrecio;
         private System.Windows.Forms.Label labelError;
         private System.Windows.Forms.Label labelOk;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

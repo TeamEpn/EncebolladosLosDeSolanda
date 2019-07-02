@@ -41,7 +41,7 @@ namespace Interfaz{
             textBoxDireccion.Text = "";
             textBoxDocumento.Text = "";
         }
-        private bool validarCampos() {
+        private bool contieneCaracteresRaros() {
             return textBoxNombreCli.Text.Contains("?")
                 || textBoxNombreCli.Text.Contains("\\")
                 || textBoxApellidoCli.Text.Contains("_")
@@ -79,14 +79,26 @@ namespace Interfaz{
         }
 
         private void BotonIngresarIngCli_Click(object sender, EventArgs e){
-            if ( validarCampos() ){
+            if (contieneCaracteresRaros()){ //da true cuando no se ha podido validar los campos
+
+                MessageBox.Show("El cliente no se ha podido registrar, verifique la información");
                 camposError();
             }
             else
             {
-                //conexion de base de datos aqui para registrar cliente
-                labelOk.Visible = true;
-                camposvacios();
+
+                if (Validacion.esCedulaValida(this.textBoxDocumento.Text))
+                {
+                    //conexion de base de datos aqui para registrar cliente
+                    MessageBox.Show("El cliente se ha registrado exitosamente");
+                    labelOk.Visible = true;
+                    camposvacios();
+                }
+                else
+                {
+                    MessageBox.Show("El cliente no se ha podido registrar, verifique la información");
+                }
+                
 
             }
         }

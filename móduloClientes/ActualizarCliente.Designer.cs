@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxCampo = new System.Windows.Forms.TextBox();
+            this.textBoxCedula = new System.Windows.Forms.TextBox();
+            this.textBoxNombre = new System.Windows.Forms.TextBox();
+            this.textBoxApellido = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxDireccion = new System.Windows.Forms.TextBox();
             this.botonBuscarActCli = new System.Windows.Forms.Button();
             this.botonActualizarActCli = new System.Windows.Forms.Button();
             this.botonCancelarActCli = new System.Windows.Forms.Button();
@@ -46,33 +46,33 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBoxCampo
             // 
-            this.textBox1.Location = new System.Drawing.Point(275, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBoxCampo.Location = new System.Drawing.Point(275, 17);
+            this.textBoxCampo.Name = "textBoxCampo";
+            this.textBoxCampo.Size = new System.Drawing.Size(195, 20);
+            this.textBoxCampo.TabIndex = 0;
             // 
-            // textBox2
+            // textBoxCedula
             // 
-            this.textBox2.Location = new System.Drawing.Point(121, 63);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 20);
-            this.textBox2.TabIndex = 1;
+            this.textBoxCedula.Location = new System.Drawing.Point(121, 63);
+            this.textBoxCedula.Name = "textBoxCedula";
+            this.textBoxCedula.Size = new System.Drawing.Size(121, 20);
+            this.textBoxCedula.TabIndex = 1;
             // 
-            // textBox3
+            // textBoxNombre
             // 
-            this.textBox3.Location = new System.Drawing.Point(121, 106);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 20);
-            this.textBox3.TabIndex = 2;
+            this.textBoxNombre.Location = new System.Drawing.Point(121, 106);
+            this.textBoxNombre.Name = "textBoxNombre";
+            this.textBoxNombre.Size = new System.Drawing.Size(121, 20);
+            this.textBoxNombre.TabIndex = 2;
             // 
-            // textBox4
+            // textBoxApellido
             // 
-            this.textBox4.Location = new System.Drawing.Point(121, 152);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 20);
-            this.textBox4.TabIndex = 3;
+            this.textBoxApellido.Location = new System.Drawing.Point(121, 152);
+            this.textBoxApellido.Name = "textBoxApellido";
+            this.textBoxApellido.Size = new System.Drawing.Size(121, 20);
+            this.textBoxApellido.TabIndex = 3;
             // 
             // comboBox1
             // 
@@ -91,12 +91,12 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Buscar Cliente por:";
             // 
-            // textBox5
+            // textBoxDireccion
             // 
-            this.textBox5.Location = new System.Drawing.Point(121, 200);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(121, 20);
-            this.textBox5.TabIndex = 6;
+            this.textBoxDireccion.Location = new System.Drawing.Point(121, 200);
+            this.textBoxDireccion.Name = "textBoxDireccion";
+            this.textBoxDireccion.Size = new System.Drawing.Size(121, 20);
+            this.textBoxDireccion.TabIndex = 6;
             // 
             // botonBuscarActCli
             // 
@@ -125,20 +125,21 @@
             this.botonCancelarActCli.TabIndex = 9;
             this.botonCancelarActCli.Text = "Cancelar";
             this.botonCancelarActCli.UseVisualStyleBackColor = true;
+            this.botonCancelarActCli.Click += new System.EventHandler(this.BotonCancelarActCli_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 66);
+            this.label2.Location = new System.Drawing.Point(56, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 13);
+            this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Cédula | Pasaporte";
+            this.label2.Text = "Cédula";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(64, 106);
+            this.label3.Location = new System.Drawing.Point(52, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 11;
@@ -170,7 +171,7 @@
             this.listBox1.Size = new System.Drawing.Size(275, 264);
             this.listBox1.TabIndex = 14;
             // 
-            // formActualizarCliente
+            // ActualizarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -183,14 +184,14 @@
             this.Controls.Add(this.botonCancelarActCli);
             this.Controls.Add(this.botonActualizarActCli);
             this.Controls.Add(this.botonBuscarActCli);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBoxDireccion);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Name = "formActualizarCliente";
+            this.Controls.Add(this.textBoxApellido);
+            this.Controls.Add(this.textBoxNombre);
+            this.Controls.Add(this.textBoxCedula);
+            this.Controls.Add(this.textBoxCampo);
+            this.Name = "ActualizarCliente";
             this.Text = "ActualizarCliente";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -199,13 +200,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxCampo;
+        private System.Windows.Forms.TextBox textBoxCedula;
+        private System.Windows.Forms.TextBox textBoxNombre;
+        private System.Windows.Forms.TextBox textBoxApellido;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxDireccion;
         private System.Windows.Forms.Button botonBuscarActCli;
         private System.Windows.Forms.Button botonActualizarActCli;
         private System.Windows.Forms.Button botonCancelarActCli;

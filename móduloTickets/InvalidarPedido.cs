@@ -27,5 +27,19 @@ namespace Interfaz
         {
 
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+            if (Validacion.existePedido(this.textBoxIdPedido.Text))
+            {
+                MessageBox.Show("INFORMACIÓN DEL TICKET ASOCIADO A UN PEDIDO...\n..\n...");
+            }
+            else
+            {
+                MessageBox.Show("Pedido no encontrado en a base datos");
+            }
+
+        }
     }
 }

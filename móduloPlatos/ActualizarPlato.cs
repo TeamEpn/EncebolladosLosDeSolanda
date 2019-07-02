@@ -19,8 +19,35 @@ namespace Interfaz
 
         }
 
+        private bool validarCampos()
+        {
+            return this.textBox1.Text == "" || textBox2.Text == "";
+        }
+
         private void Button1_Click(object sender, EventArgs e)
         {
+
+            if (validarCampos())
+            {
+
+                MessageBox.Show("Error al actualizar el plato");
+            }
+            else
+            {
+
+                if (Validacion.estaPlatoRegistrado(this.textBox1.Text))
+                {
+                    //se actualiza en la base de datos
+                    MessageBox.Show("Plato actualizado exitosamente");
+                }
+                else
+                {
+                    MessageBox.Show("Error al actualizar el plato");
+                }
+
+            }
+
+
 
         }
 

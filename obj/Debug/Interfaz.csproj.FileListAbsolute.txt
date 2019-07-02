@@ -112,7 +112,6 @@ C:\Users\User\Desktop\PROPIETARIOS\EncebolladosLosDeSolanda\obj\Debug\Interfaz.f
 C:\Users\User\Desktop\PROPIETARIOS\EncebolladosLosDeSolanda\obj\Debug\Interfaz.EliminarPlato.resources
 C:\Users\User\Desktop\PROPIETARIOS\EncebolladosLosDeSolanda\obj\Debug\Interfaz.IngresarCliente.resources
 C:\Users\User\Desktop\PROPIETARIOS\EncebolladosLosDeSolanda\obj\Debug\Interfaz.IngresarPlato.resources
-C:\Users\User\Desktop\PROPIETARIOS\EncebolladosLosDeSolanda\obj\Debug\Interfaz.ModificarPedido.resources
 C:\Users\User\Desktop\PROPIETARIOS\EncebolladosLosDeSolanda\obj\Debug\Interfaz.MostrarTicketsEmitidos.resources
 C:\Users\User\Desktop\PROPIETARIOS\EncebolladosLosDeSolanda\obj\Debug\Interfaz.NuevoPedido.resources
 C:\Users\User\Desktop\PROPIETARIOS\EncebolladosLosDeSolanda\obj\Debug\Interfaz.MenuPrincipal.resources
@@ -125,3 +124,6 @@ C:\Users\User\Desktop\PROPIETARIOS\EncebolladosLosDeSolanda\obj\Debug\Interfaz.c
 C:\Users\User\Desktop\PROPIETARIOS\EncebolladosLosDeSolanda\obj\Debug\Interfaz.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\PROPIETARIOS\EncebolladosLosDeSolanda\obj\Debug\Interfaz.exe
 C:\Users\User\Desktop\PROPIETARIOS\EncebolladosLosDeSolanda\obj\Debug\Interfaz.pdb
+C:\Users\User\Desktop\PROPIETARIOS\EncebolladosLosDeSolanda\obj\Debug\Interfaz.DarDeAlta.resources
+C:\Users\User\Desktop\PROPIETARIOS\EncebolladosLosDeSolanda\obj\Debug\Interfaz.EmisionFactura.resources
+C:\Users\User\Desktop\PROPIETARIOS\EncebolladosLosDeSolanda\obj\Debug\Interfaz.móduloClientes.DarDeAltaPlato.resources

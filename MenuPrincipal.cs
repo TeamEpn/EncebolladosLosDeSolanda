@@ -96,11 +96,6 @@ namespace Interfaz{
             nuevoPedido.Show();
         }
 
-        private void ModificarPedido_Click(object sender, EventArgs e)
-        {
-            Form modificarPedido = new ModificarPedido();
-            modificarPedido.Show();
-        }
 
         private void EliminarPedido_Click(object sender, EventArgs e)
         {
@@ -122,7 +117,7 @@ namespace Interfaz{
 
         private void Button1_Click(object sender, EventArgs e)
         {
-
+            this.labelDescripcion.Text = "Descripcion del módulo Clientes";
         }
 
         private void DarDeBajaToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -176,6 +171,50 @@ namespace Interfaz{
         {
             Balance balance = new Balance();
             balance.Show();
+        }
+
+        private void ButtonPlatos_Click(object sender, EventArgs e)
+        {
+            this.labelDescripcion.Text = "Descripcion del módulo Platos";
+        }
+
+        private void ButtonEstadistica_Click(object sender, EventArgs e)
+        {
+            this.labelDescripcion.Text = "Descripcion del módulo Estadística";
+        }
+
+        private void ButtonTieckets_Click(object sender, EventArgs e)
+        {
+            this.labelDescripcion.Text = "Descripcion del módulo Tickets";
+        }
+
+        private void ButtonAdministración_Click(object sender, EventArgs e)
+        {
+            this.labelDescripcion.Text = "Descripcion del módulo Administración";
+        }
+
+        private void EmitirFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EmisionFactura emisionFactura = new EmisionFactura();
+            emisionFactura.Show();
+        }
+
+        private void DarDeAltaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            DarDeAlta darDeAlta = new DarDeAlta();
+            darDeAlta.Show();
+        }
+
+        private void DarDeAltaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Interfaz.móduloClientes.DarDeAltaPlato darDeAltaPlato = new móduloClientes.DarDeAltaPlato();
+            darDeAltaPlato.Show();
+        }
+
+        private void DarDeBajaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EliminarPlato eliminarPlato = new EliminarPlato();
+            eliminarPlato.Show();
         }
     }
 }
